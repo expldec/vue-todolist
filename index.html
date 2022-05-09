@@ -19,9 +19,9 @@
      </header> 
      <section class="todos">
         <ul>
-            <li v-for="item in todos" :class="{done : item.done}">
+            <li v-for="(item, index) in todos" :class="{done : item.done}">
                 <span class="text">{{item.text}}</span>
-                <span class="cross-btn">&times;</span>
+                <span class="cross-btn" @click="removeItem(index)">&times;</span>
             </li>
         </ul>
      </section>  

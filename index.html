@@ -19,7 +19,7 @@
      </header> 
      <section class="todos">
          <div class="input">
-             <input type="text" placeholder="Nuovo ToDo" v-model="newTodoInput">
+             <input type="text" placeholder="Nuovo ToDo" v-model="newTodoInput" @keyup.enter="addTodo">
              <button @click="addTodo">Aggiungi</button>
          </div>
         <ul>

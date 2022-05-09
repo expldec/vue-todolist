@@ -29,6 +29,7 @@ const app = new Vue(
             },
             addTodo: function() {
                 this.todos.push({text: this.newTodoInput, done: false});
+                this.newTodoInput = ''
             }
         }
     }

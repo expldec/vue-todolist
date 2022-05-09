@@ -2,7 +2,24 @@ const app = new Vue(
     {
         el : '#root',
         data: {
-            activePic: 0,
+            todos: [
+                {
+                    text: 'Fare la spesa',
+                    done: false
+                },
+                {
+                    text: 'Bere acqua',
+                    done: false
+                },
+                {
+                    text: 'Fare palestra',
+                    done: false
+                },
+                {
+                    text: 'Mangiare gli spaghetti',
+                    done: true
+                },
+            ]
             
         },
         methods: {

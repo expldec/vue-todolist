@@ -17,6 +17,19 @@ h1 {
     text-align: center;
 }
 
+.input {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0.5rem auto;
+}
+
+.input input,
+.input button {
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
 .todos ul {
     display: flex;
     flex-direction: column;

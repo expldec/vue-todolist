@@ -18,6 +18,10 @@
          <h1>ToDo</h1>
      </header> 
      <section class="todos">
+         <div class="input">
+             <input type="text" placeholder="Nuovo ToDo" v-model="newTodoInput">
+             <button @click="addTodo">Aggiungi</button>
+         </div>
         <ul>
             <li v-for="(item, index) in todos" :class="{done : item.done}">
                 <span class="text">{{item.text}}</span>

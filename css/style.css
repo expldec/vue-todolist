@@ -27,27 +27,32 @@ h1 {
 
 .todos li {
     list-style: none;
-    padding: 0.5rem;
     background-color: lightgrey;
     display: flex;
+    align-items: center;
 }
 
-.todos li.done span.text {
-    text-decoration: line-through;
+.todos li span {
+    padding: 0.5rem;
 }
 
 .todos li span.text {
     flex-grow: 1;
 }
 
+.todos li.done span.text {
+    text-decoration: line-through;
+}
+
 .todos li span.cross-btn {
-    display: inline-block;
     color: white;
     background-color: red;
     border-radius: 25%;
     font-weight: 900;
     width: 1.2rem;
     height: 1.2rem;
-    line-height: 1.2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
 }

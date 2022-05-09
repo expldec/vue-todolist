@@ -24,7 +24,7 @@
          </div>
         <ul>
             <li v-for="(item, index) in todos" :class="{done : item.done}">
-                <span class="text">{{item.text}}</span>
+                <span class="text" @click="toggleDone(index)">{{item.text}}</span>
                 <span class="cross-btn" @click="removeItem(index)">&times;</span>
             </li>
         </ul>

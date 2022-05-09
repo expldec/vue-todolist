@@ -29,7 +29,10 @@ const app = new Vue(
             },
             addTodo: function() {
                 this.todos.push({text: this.newTodoInput, done: false});
-                this.newTodoInput = ''
+                this.newTodoInput = '';
+            },
+            toggleDone: function(index) {
+                this.todos[index].done = !this.todos[index].done;
             }
         }
     }
